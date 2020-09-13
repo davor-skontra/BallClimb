@@ -19,3 +19,6 @@ MonoBehaviour:
   _jumpAnimationDuration: 0.05
   _jumpAnimationEase: 3
   _jumpAnimationScaleDown: 1.2
+  _eatAnimationDuration: 1
+  _eatAnimationEase: 2
+  _ateScale: 1.3
