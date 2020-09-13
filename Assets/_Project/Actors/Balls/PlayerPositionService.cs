@@ -6,13 +6,14 @@ namespace Actors.Balls
 {
     public class PlayerPositionService
     {
+
+        private BallHandler _playerBallHandler;
         
         public void TrackPlayerHandler(BallHandler ballHandler)
         {
-            PlayerPosition = ballHandler.Position;
+            _playerBallHandler = ballHandler;
         }
-        
-        public IObservable<Vector3> PlayerPosition { get; private set; } = new Subject<Vector3>();
 
+        public Vector3? PlayerPosition => _playerBallHandler?.Position;
     }
 }

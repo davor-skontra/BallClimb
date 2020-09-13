@@ -48,5 +48,10 @@ namespace Actors.Balls
         {
             _rigidbody.AddTorque(torque);
         }
+
+        public void Update()
+        {
+            _handler.UpdatePosition(transform.position);
+        }
     }
 }

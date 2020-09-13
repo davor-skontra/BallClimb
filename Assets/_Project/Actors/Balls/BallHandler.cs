@@ -10,27 +10,23 @@ namespace Actors.Balls
     public class BallHandler
     {
         private const float JumpThrottleSeconds = 0.1f;
-            
+
         [Inject] private BallInputFactory _ballInputFactory;
         [Inject] private IBallSettings _ballSettings;
-        [Inject] private PlayerPositionService _playerPositionService;
-        
+
         private IBallInput _input;
         private bool _touchingFloor;
 
-        private Subject<Vector3> _position = new Subject<Vector3>();
+        private Vector3 _position;
 
         public BallHandler(BallKind ballKind)
         {
             Alkar.Inject(this);
-            
+
             _input = _ballInputFactory.Get(ballKind);
-
-            if (ballKind == BallKind.Player)
-            {
-                _playerPositionService.TrackPlayerHandler(this);
-            }
-
+            
+            _input.TrackHandler(this);
+            
             RotationTorque = _input
                 .RawDirection
                 .Select(
@@ -49,7 +45,7 @@ namespace Actors.Balls
         public IObservable<Vector3> RotationTorque { get; }
         public IObservable<Vector3> JumpForce { get; }
 
-        public IObservable<Vector3> Position => _position;
+        public Vector3 Position => _position;
 
         public void SetFloorContact(bool contact)
         {
@@ -58,7 +54,7 @@ namespace Actors.Balls
 
         public void UpdatePosition(Vector3 position)
         {
-            _position.OnNext(position);
+            _position = position;
         }
     }
 }

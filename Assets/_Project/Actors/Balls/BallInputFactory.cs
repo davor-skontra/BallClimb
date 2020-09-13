@@ -5,12 +5,15 @@ namespace Actors.Balls
     public class BallInputFactory
     {
         private readonly IBallInput _player;
-        private readonly IBallInput _hostile;
+        private readonly PlayerPositionService _positionService;
+        private readonly IBallSettings _ballSettings;
         private readonly IBallInput _friendly;
 
-        public BallInputFactory(IBallInput player, PlayerPositionService positionService)
+        public BallInputFactory(IBallInput player, PlayerPositionService positionService, IBallSettings ballSettings)
         {
             _player = player;
+            _positionService = positionService;
+            _ballSettings = ballSettings;
         }
         
         public IBallInput Get(BallKind ballKind)
@@ -20,7 +23,7 @@ namespace Actors.Balls
                 case BallKind.Player:
                     return _player;
                 case BallKind.Hostile:
-                    return _hostile;
+                    return new HostileInput(_positionService, _ballSettings);
                 case BallKind.Friendly:
                     return _friendly;
                     break;

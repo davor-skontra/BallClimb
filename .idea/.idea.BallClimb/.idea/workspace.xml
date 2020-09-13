@@ -31,11 +31,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="019f01b6-f8f0-4ce2-90ef-f001fa334c43" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/Media/DefaultBallSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/Media/DefaultBallSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Play.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +56,25 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/65/03a6f5b0/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/cb/1bc500a0/ObjectEqualityComparer`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7B464A4-ED9A-41B1-9DC1-B7BA0DB59C7B/ad/b9022c51/IPointerDownHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/8c/933ee849/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/ControlButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/40/861f9854/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/a7/93e067c8/RuntimeTypeHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/c1/5afcf3c0/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,21 +85,22 @@
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposable.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IInput.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallKind.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectComponentAttribute.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/SceneNames.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Scenes.cs" />
         <option value="$PROJECT_DIR$/Assets/_EditorExtensions/BootstrapLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/ControlButton.cs" />
         <option value="$PROJECT_DIR$/Assets/AlkarInjector/Alkar.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs" />
       </list>
     </option>
   </component>
@@ -128,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599990042388</updated>
-      <workItem from="1599990046126" duration="12154000" />
+      <workItem from="1599990046126" duration="15553000" />
     </task>
     <servers />
   </component>
@@ -152,195 +169,120 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="189" key="GridCell.Tab.0.bottom" timestamp="1600000810189">
+    <state width="2517" height="189" key="GridCell.Tab.0.bottom" timestamp="1600005332066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.0.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810189" />
-    <state width="2517" height="189" key="GridCell.Tab.0.center" timestamp="1600000810189">
+    <state width="2517" height="189" key="GridCell.Tab.0.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005332066" />
+    <state width="2517" height="189" key="GridCell.Tab.0.center" timestamp="1600005332066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.0.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810189" />
-    <state width="2517" height="189" key="GridCell.Tab.0.left" timestamp="1600000810189">
+    <state width="2517" height="189" key="GridCell.Tab.0.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005332066" />
+    <state width="2517" height="189" key="GridCell.Tab.0.left" timestamp="1600005332066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.0.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810189" />
-    <state width="2517" height="189" key="GridCell.Tab.0.right" timestamp="1600000810189">
+    <state width="2517" height="189" key="GridCell.Tab.0.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005332066" />
+    <state width="2517" height="189" key="GridCell.Tab.0.right" timestamp="1600005332066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.0.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810189" />
-    <state width="2517" height="189" key="GridCell.Tab.1.bottom" timestamp="1600000820771">
+    <state width="2517" height="189" key="GridCell.Tab.0.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005332066" />
+    <state width="2517" height="537" key="GridCell.Tab.1.bottom" timestamp="1600005364445">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.1.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000820771" />
-    <state width="2517" height="189" key="GridCell.Tab.1.center" timestamp="1600000820771">
+    <state width="2517" height="537" key="GridCell.Tab.1.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005364445" />
+    <state width="2517" height="537" key="GridCell.Tab.1.center" timestamp="1600005364445">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.1.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000820771" />
-    <state width="2517" height="189" key="GridCell.Tab.1.left" timestamp="1600000820771">
+    <state width="2517" height="537" key="GridCell.Tab.1.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005364445" />
+    <state width="2517" height="537" key="GridCell.Tab.1.left" timestamp="1600005364445">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.1.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000820771" />
-    <state width="2517" height="189" key="GridCell.Tab.1.right" timestamp="1600000820771">
+    <state width="2517" height="537" key="GridCell.Tab.1.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005364445" />
+    <state width="2517" height="537" key="GridCell.Tab.1.right" timestamp="1600005364445">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.1.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000820771" />
-    <state width="2517" height="189" key="GridCell.Tab.2.bottom" timestamp="1600000810025">
+    <state width="2517" height="537" key="GridCell.Tab.1.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005364445" />
+    <state width="2517" height="189" key="GridCell.Tab.2.bottom" timestamp="1600005331829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.2.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810025" />
-    <state width="2517" height="189" key="GridCell.Tab.2.center" timestamp="1600000810025">
+    <state width="2517" height="189" key="GridCell.Tab.2.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331829" />
+    <state width="2517" height="189" key="GridCell.Tab.2.center" timestamp="1600005331829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.2.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810025" />
-    <state width="2517" height="189" key="GridCell.Tab.2.left" timestamp="1600000810024">
+    <state width="2517" height="189" key="GridCell.Tab.2.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331829" />
+    <state width="2517" height="189" key="GridCell.Tab.2.left" timestamp="1600005331829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.2.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810024" />
-    <state width="2517" height="189" key="GridCell.Tab.2.right" timestamp="1600000810025">
+    <state width="2517" height="189" key="GridCell.Tab.2.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331829" />
+    <state width="2517" height="189" key="GridCell.Tab.2.right" timestamp="1600005331829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.2.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810025" />
-    <state width="2517" height="189" key="GridCell.Tab.3.bottom" timestamp="1600000810025">
+    <state width="2517" height="189" key="GridCell.Tab.2.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331829" />
+    <state width="2517" height="189" key="GridCell.Tab.3.bottom" timestamp="1600005331830">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.3.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810025" />
-    <state width="2517" height="189" key="GridCell.Tab.3.center" timestamp="1600000810025">
+    <state width="2517" height="189" key="GridCell.Tab.3.bottom/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331830" />
+    <state width="2517" height="189" key="GridCell.Tab.3.center" timestamp="1600005331829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.3.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810025" />
-    <state width="2517" height="189" key="GridCell.Tab.3.left" timestamp="1600000810025">
+    <state width="2517" height="189" key="GridCell.Tab.3.center/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331829" />
+    <state width="2517" height="189" key="GridCell.Tab.3.left" timestamp="1600005331829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.3.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810025" />
-    <state width="2517" height="189" key="GridCell.Tab.3.right" timestamp="1600000810025">
+    <state width="2517" height="189" key="GridCell.Tab.3.left/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331829" />
+    <state width="2517" height="189" key="GridCell.Tab.3.right" timestamp="1600005331830">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="189" key="GridCell.Tab.3.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600000810025" />
-    <state x="1084" y="373" key="RiderGenerateDialog" timestamp="1599999871981">
+    <state width="2517" height="189" key="GridCell.Tab.3.right/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005331830" />
+    <state x="1084" y="373" key="RiderGenerateDialog" timestamp="1600002698671">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1084" y="373" key="RiderGenerateDialog/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1599999871981" />
+    <state x="1084" y="373" key="RiderGenerateDialog/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600002698671" />
+    <state x="834" y="429" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600005344526">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="834" y="429" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005344526" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs</url>
-          <line>38</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="39">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs</url>
+          <line>56</line>
+          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\HostileInput.cs" initialLine="56">
             <startOffsets>
-              <option value="991" />
+              <option value="1530" />
             </startOffsets>
             <endOffsets>
-              <option value="1024" />
+              <option value="1674" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="34">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs</url>
+          <line>44</line>
+          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\HostileInput.cs" initialLine="44">
             <startOffsets>
-              <option value="871" />
+              <option value="1195" />
             </startOffsets>
             <endOffsets>
-              <option value="903" />
+              <option value="1274" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="25">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs</url>
+          <line>60</line>
+          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\HostileInput.cs" initialLine="60">
             <startOffsets>
-              <option value="619" />
+              <option value="1725" />
             </startOffsets>
             <endOffsets>
-              <option value="782" />
+              <option value="1792" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\PlayerInputBehaviour.cs" initialLine="27">
-            <startOffsets>
-              <option value="753" />
-            </startOffsets>
-            <endOffsets>
-              <option value="766" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\PlayerInputBehaviour.cs" initialLine="32">
-            <startOffsets>
-              <option value="837" />
-            </startOffsets>
-            <endOffsets>
-              <option value="851" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="49">
-            <startOffsets>
-              <option value="1204" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1233" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <condition expression="target.GetType() == typeof(BallBehaviour)" language="C#" />
-          <url>file://$PROJECT_DIR$/Assets/AlkarInjector/KnownType.cs</url>
-          <line>95</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\AlkarInjector\KnownType.cs" initialLine="95">
-            <startOffsets>
-              <option value="3183" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3256" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AlkarInjector/Alkar.cs</url>
-          <line>12</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\AlkarInjector\Alkar.cs" initialLine="12">
-            <startOffsets>
-              <option value="382" />
-            </startOffsets>
-            <endOffsets>
-              <option value="416" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AlkarInjector/KnownType.cs</url>
-          <line>104</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\AlkarInjector\KnownType.cs" initialLine="104">
-            <startOffsets>
-              <option value="3533" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3608" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

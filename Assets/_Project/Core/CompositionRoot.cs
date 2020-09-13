@@ -13,7 +13,9 @@ namespace Core
         private void Awake()
         {
             var playerPositionService = new PlayerPositionService();
-            var inputFactory = new BallInputFactory(_playerInput, playerPositionService);
+            var inputFactory = new BallInputFactory(_playerInput, playerPositionService, _ballSettings);
+            
+            _playerInput.Initialize(playerPositionService);
 
             Services.Register(playerPositionService);
             Services.Register(inputFactory);

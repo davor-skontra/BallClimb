@@ -7,5 +7,7 @@ namespace Actors.Balls
     {
         IObservable<float> RawDirection { get; }
         IObservable<Unit> Jump { get; }
+
+        void TrackHandler(BallHandler handler);
     }
 }
