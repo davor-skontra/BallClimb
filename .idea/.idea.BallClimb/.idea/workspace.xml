@@ -31,19 +31,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="019f01b6-f8f0-4ce2-90ef-f001fa334c43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Play.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/AiInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/AiInput.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,15 +84,16 @@
         <option value="$PROJECT_DIR$/Assets/_EditorExtensions/BootstrapLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/ControlButton.cs" />
         <option value="$PROJECT_DIR$/Assets/AlkarInjector/Alkar.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/AiInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599990042388</updated>
-      <workItem from="1599990046126" duration="15553000" />
+      <workItem from="1599990046126" duration="16188000" />
     </task>
     <servers />
   </component>
@@ -241,50 +234,5 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="834" y="429" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1600005344526" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs</url>
-          <line>56</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\HostileInput.cs" initialLine="56">
-            <startOffsets>
-              <option value="1530" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1674" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs</url>
-          <line>44</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\HostileInput.cs" initialLine="44">
-            <startOffsets>
-              <option value="1195" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1274" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/HostileInput.cs</url>
-          <line>60</line>
-          <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\HostileInput.cs" initialLine="60">
-            <startOffsets>
-              <option value="1725" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1792" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
