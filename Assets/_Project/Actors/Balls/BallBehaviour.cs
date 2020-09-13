@@ -12,16 +12,19 @@ namespace Actors.Balls
     public class BallBehaviour : AutoDisposableBehaviour
     {
         [SerializeField] private BallKind _ballKind;
-        
+
+
         [InjectComponent] private Rigidbody _rigidbody;
         [InjectComponent] private Collider _collider;
-        
+
         [Inject] private IBallSettings _ballSettings;
 
         private BallHandler _handler;
         private JumpDirectionProvider _jumpDirectionProvider;
         private Tween _scaleAnimation;
-        
+
+        public BallKind BallKind => _ballKind;
+
         protected override IDisposable[] Init()
         {
             Alkar.InjectMonoBehaviour(this);
