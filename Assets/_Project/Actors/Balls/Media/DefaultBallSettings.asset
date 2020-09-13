@@ -16,3 +16,6 @@ MonoBehaviour:
   _jumpForce: 4000
   _hostileChaseDistance: 5
   _friendlyAvoidDistance: 5
+  _jumpAnimationDuration: 0.05
+  _jumpAnimationEase: 3
+  _jumpAnimationScaleDown: 1.2

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 namespace Actors.Balls
@@ -8,6 +9,9 @@ namespace Actors.Balls
         float JumpForce { get; }
         float HostileChaseDistance { get; }
         float FriendlyAvoidDistance { get; }
+        float JumpAnimationDuration { get; }
+        Ease JumpAnimationEase { get; }
+        float JumpAnimationScaleUp { get; }
     }
 
     [CreateAssetMenu]
@@ -15,15 +19,24 @@ namespace Actors.Balls
     {
         public const float RotationBase = 1f;
 
-        [SerializeField] private float _speed;
+        [Header("Movement")] [SerializeField] private float _speed;
         [SerializeField] private float _jumpForce;
         [SerializeField] private float _hostileChaseDistance;
         [SerializeField] private float _friendlyAvoidDistance;
+
+        [Header("Animation")] [SerializeField] private float _jumpAnimationDuration;
+        [SerializeField] private Ease _jumpAnimationEase;
+        [SerializeField] private float _jumpAnimationScaleDown;
+
 
         public float Speed => _speed;
 
         public float JumpForce => _jumpForce;
         public float HostileChaseDistance => _hostileChaseDistance;
         public float FriendlyAvoidDistance => _friendlyAvoidDistance;
+
+        public float JumpAnimationDuration => _jumpAnimationDuration;
+        public Ease JumpAnimationEase => _jumpAnimationEase;
+        public float JumpAnimationScaleUp => _jumpAnimationScaleDown;
     }
 }

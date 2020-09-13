@@ -2,6 +2,7 @@ using System;
 using AlkarInjector;
 using AlkarInjector.Attributes;
 using Core.Disposal;
+using DG.Tweening;
 using UniRx;
 using UnityEngine;
 
@@ -13,14 +14,19 @@ namespace Actors.Balls
         [SerializeField] private BallKind _ballKind;
         
         [InjectComponent] private Rigidbody _rigidbody;
+        [InjectComponent] private Collider _collider;
+        
+        [Inject] private IBallSettings _ballSettings;
 
         private BallHandler _handler;
+        private JumpDirectionProvider _jumpDirectionProvider;
 
         protected override IDisposable[] Init()
         {
             Alkar.InjectMonoBehaviour(this);
             
             _handler = new BallHandler(_ballKind);
+            _jumpDirectionProvider = new JumpDirectionProvider();
             
             return new IDisposable[]
             {
@@ -29,8 +35,9 @@ namespace Actors.Balls
             };
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionStay(Collision other)
         {
+            _jumpDirectionProvider.SetCollisionContacts(other);
             _handler?.SetFloorContact(true);
         }
 
@@ -39,9 +46,21 @@ namespace Actors.Balls
             _handler?.SetFloorContact(false);
         }
 
-        private void Jump(Vector3 force)
+        private void Jump(float force)
         {
-            _rigidbody.AddForce(force);
+            var jumpDirection = _jumpDirectionProvider.GetJumpDirection(transform.position) * force;
+            
+            _rigidbody.AddForce(jumpDirection);
+
+            var s = _ballSettings;
+            transform
+                .DOScale(Vector3.one * s.JumpAnimationScaleUp, s.JumpAnimationDuration)
+                .SetLoops(2, LoopType.Yoyo)
+                .SetEase(s.JumpAnimationEase)
+                .OnPlay(() => _collider.isTrigger = true)
+                .OnComplete(() => _collider.isTrigger = false)
+                .Play();
+
         }
 
         private void Rotate(Vector3 torque)
