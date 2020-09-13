@@ -3,6 +3,7 @@ using Actors.Balls;
 using AlkarInjector;
 using AlkarInjector.Attributes;
 using UnityEngine;
+using Utilities;
 
 namespace Actors.Camera
 {
@@ -19,10 +20,8 @@ namespace Actors.Camera
 
         private void OnCollisionEnter(Collision other)
         {
-            var ball = other.gameObject.GetComponent<BallBehaviour>();
-            var isPlayer = ball != null && ball.BallKind == BallKind.Player;
             var isBellow = transform.position.y < other.transform.position.y;
-            if (isPlayer && isBellow && _currentCameraHolder != this)
+            if (other.IsPlayer() && isBellow && _currentCameraHolder != this)
             {
                 _currentCameraHolder = this;
                 _cameraService.MoveToPosition(transform.position);
