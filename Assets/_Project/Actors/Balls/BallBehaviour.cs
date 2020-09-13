@@ -87,6 +87,13 @@ namespace Actors.Balls
             var s = _ballSettings;
             _scaleAnimation = transform
                 .DOScale(scale, s.EatAnimationDuration)
+                .OnComplete(() =>
+                {
+                    if (transform.localScale.magnitude < 0.1f)
+                    {
+                        Destroy(gameObject);
+                    }
+                })
                 .SetEase(s.EatAnimationEase);
         }
 

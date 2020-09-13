@@ -1,4 +1,5 @@
 using Actors.Balls;
+using AlkarInjector;
 using EndGameTracking;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,8 @@ namespace Core
 
         private void Awake()
         {
+            Alkar.Clear();
+            
             var playerPositionService = new PlayerPositionService();
             var inputFactory = new BallInputFactory(_playerInput, playerPositionService, _ballSettings);
             var endGameService = new EndGameService(_endGameMessages);
