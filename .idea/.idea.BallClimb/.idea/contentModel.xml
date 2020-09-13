@@ -33,7 +33,6 @@
             <e p="Scenes.cs" t="Include" />
           </e>
           <e p="Project.asmdef" t="Include" />
-          <e p="Stage" t="Include" />
         </e>
         <e p="AlkarInjector" t="Include">
           <e p="Alkar.cs" t="Include" />
