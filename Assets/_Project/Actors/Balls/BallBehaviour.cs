@@ -2,6 +2,7 @@ using System;
 using AlkarInjector;
 using AlkarInjector.Attributes;
 using Core.Disposal;
+using DG.Tweening;
 using UniRx;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ namespace Actors.Balls
         [SerializeField] private BallKind _ballKind;
         
         [InjectComponent] private Rigidbody _rigidbody;
+        [InjectComponent] private Collider _collider;
+        
+        [Inject] private IBallSettings _ballSettings;
 
         private BallHandler _handler;
         private JumpDirectionProvider _jumpDirectionProvider;
@@ -45,8 +49,18 @@ namespace Actors.Balls
         private void Jump(float force)
         {
             var jumpDirection = _jumpDirectionProvider.GetJumpDirection(transform.position) * force;
-            Debug.Log($"Jump direction {jumpDirection}");
+            
             _rigidbody.AddForce(jumpDirection);
+
+            var s = _ballSettings;
+            transform
+                .DOScale(Vector3.one * s.JumpAnimationScaleUp, s.JumpAnimationDuration)
+                .SetLoops(2, LoopType.Yoyo)
+                .SetEase(s.JumpAnimationEase)
+                .OnPlay(() => _collider.isTrigger = true)
+                .OnComplete(() => _collider.isTrigger = false)
+                .Play();
+
         }
 
         private void Rotate(Vector3 torque)
