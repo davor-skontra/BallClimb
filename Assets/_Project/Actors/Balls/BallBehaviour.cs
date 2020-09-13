@@ -15,12 +15,14 @@ namespace Actors.Balls
         [InjectComponent] private Rigidbody _rigidbody;
 
         private BallHandler _handler;
+        private JumpDirectionProvider _jumpDirectionProvider;
 
         protected override IDisposable[] Init()
         {
             Alkar.InjectMonoBehaviour(this);
             
             _handler = new BallHandler(_ballKind);
+            _jumpDirectionProvider = new JumpDirectionProvider();
             
             return new IDisposable[]
             {
@@ -29,8 +31,9 @@ namespace Actors.Balls
             };
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionStay(Collision other)
         {
+            _jumpDirectionProvider.SetCollisionContacts(other);
             _handler?.SetFloorContact(true);
         }
 
@@ -39,9 +42,11 @@ namespace Actors.Balls
             _handler?.SetFloorContact(false);
         }
 
-        private void Jump(Vector3 force)
+        private void Jump(float force)
         {
-            _rigidbody.AddForce(force);
+            var jumpDirection = _jumpDirectionProvider.GetJumpDirection(transform.position) * force;
+            Debug.Log($"Jump direction {jumpDirection}");
+            _rigidbody.AddForce(jumpDirection);
         }
 
         private void Rotate(Vector3 torque)

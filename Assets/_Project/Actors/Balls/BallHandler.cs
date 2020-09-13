@@ -38,12 +38,12 @@ namespace Actors.Balls
                 .Jump
                 .Where(_ => _touchingFloor)
                 .Select(_ => _ballSettings.JumpForce)
-                .ThrottleFirst(TimeSpan.FromSeconds(JumpThrottleSeconds))
-                .Select(x => x * Vector3.up);
+                .ThrottleFirst(TimeSpan.FromSeconds(JumpThrottleSeconds));
+            
         }
 
         public IObservable<Vector3> RotationTorque { get; }
-        public IObservable<Vector3> JumpForce { get; }
+        public IObservable<float> JumpForce { get; }
 
         public Vector3 Position => _position;
 
