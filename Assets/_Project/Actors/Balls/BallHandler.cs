@@ -1,6 +1,7 @@
 using System;
 using AlkarInjector;
 using AlkarInjector.Attributes;
+using EndGameTracking;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ namespace Actors.Balls
 
         [Inject] private BallInputFactory _ballInputFactory;
         [Inject] private IBallSettings _ballSettings;
+        [Inject] private IEndGameService _endGameService;
 
         private IBallInput _input;
         private bool _touchingFloor;
@@ -61,6 +63,7 @@ namespace Actors.Balls
                 case BallKind.Player:
                     if (otherBallKind == BallKind.Hostile)
                     {
+                        _endGameService.DeclareDefeat();
                         _scaleAnimationSubject.OnNext(0f);
                     }
                     break;
