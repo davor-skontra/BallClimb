@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DefaultBallSettings
   m_EditorClassIdentifier: 
   _speed: 200
-  _jumpForce: 200
+  _jumpForce: 18

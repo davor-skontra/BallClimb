@@ -47,5 +47,13 @@ namespace Actors.Balls
 
             return 0f;
         }
+
+#if UNITY_EDITOR
+        public void Update()
+        {
+            Left(Input.GetKey(KeyCode.LeftArrow));
+            Right(Input.GetKey(KeyCode.RightArrow));
+        }
+#endif
     }
 }

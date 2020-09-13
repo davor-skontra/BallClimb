@@ -31,15 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="019f01b6-f8f0-4ce2-90ef-f001fa334c43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AlkarInjector/Alkar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlkarInjector/Alkar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Bootstrap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Play.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +76,10 @@
         <option value="$PROJECT_DIR$/Assets/_EditorExtensions/BootstrapLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/ControlButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/AlkarInjector/Alkar.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -132,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599990042388</updated>
-      <workItem from="1599990046126" duration="11173000" />
+      <workItem from="1599990046126" duration="11372000" />
     </task>
     <servers />
   </component>
