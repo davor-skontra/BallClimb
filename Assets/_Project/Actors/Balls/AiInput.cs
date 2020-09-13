@@ -57,9 +57,12 @@ namespace Actors.Balls
             {
                 return false;
             }
+
+            var minDistance = _ballKind == BallKind.Hostile
+                ? _ballSettings.HostileChaseDistance
+                : _ballSettings.FriendlyAvoidDistance;
             
-            return Vector3.Distance(_handler.Position, _playerPositionService.PlayerPosition.Value) <
-                   _ballSettings.HostileChaseDistance;
+            return Vector3.Distance(_handler.Position, _playerPositionService.PlayerPosition.Value) < minDistance;
         }
 
         private bool NotInitialized => !_playerPositionService.PlayerPosition.HasValue || _handler == null;
