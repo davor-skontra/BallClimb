@@ -29,20 +29,22 @@ namespace Actors.Balls
                 _playerPositionService.TrackPlayerHandler(this);
             }
 
-            RotationForce = _input
+            RotationTorque = _input
                 .RawDirection
                 .Select(
                     x => x * _ballSettings.Speed * Time.deltaTime
-                );
+                )
+                .Select(x => x * Vector3.forward);
 
             JumpForce = _input
                 .Jump
                 .Where(_ => _touchingFloor)
-                .Select(_ => _ballSettings.JumpForce);
+                .Select(_ => _ballSettings.JumpForce)
+                .Select(x => x * Vector3.up);
         }
 
-        public IObservable<float> RotationForce { get; }
-        public IObservable<float> JumpForce { get; }
+        public IObservable<Vector3> RotationTorque { get; }
+        public IObservable<Vector3> JumpForce { get; }
 
         public IObservable<Vector3> Position => _position;
 

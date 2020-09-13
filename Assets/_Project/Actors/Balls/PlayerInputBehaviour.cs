@@ -4,24 +4,48 @@ using UnityEngine;
 
 namespace Actors.Balls
 {
-    public class PlayerInputBehaviour: MonoBehaviour, IBallInput
+    public class PlayerInputBehaviour : MonoBehaviour, IBallInput
     {
+        private const float RotationBase = 1f;
         private readonly Subject<float> _rawDirectionSubject = new Subject<float>();
-        
+
         private readonly Subject<Unit> _jumpSubject = new Subject<Unit>();
 
-        public IObservable<float> RawDirection => _rawDirectionSubject;
+        private bool _left;
+        private bool _right;
 
-        public IObservable<Unit> Jump => _jumpSubject;
+        public IObservable<float> RawDirection => Observable
+            .EveryUpdate()
+            .Select(_ => GetRotation());
 
-        public void ApplyJump()
+        public IObservable<Unit> Jump => Observable
+            .EveryUpdate()
+            .Where(_ => _left && _right)
+            .AsUnitObservable();
+
+        public void Left(bool down)
         {
-            _jumpSubject.OnNext(new Unit());
+            _left = down;
         }
 
-        public void ApplyInput(float amount)
+        public void Right(bool down)
         {
-            _rawDirectionSubject.OnNext(amount);
+            _right = down;
+        }
+
+        private float GetRotation()
+        {
+            if (_left && !_right)
+            {
+                return RotationBase;
+            }
+
+            if (!_left && _right)
+            {
+                return -RotationBase;
+            }
+
+            return 0f;
         }
     }
 }

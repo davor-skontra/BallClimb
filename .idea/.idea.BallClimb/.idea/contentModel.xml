@@ -18,6 +18,7 @@
               <e p="BallInputFactory.cs" t="Include" />
               <e p="BallKind.cs" t="Include" />
               <e p="BallSettings.cs" t="Include" />
+              <e p="ControlButton.cs" t="Include" />
               <e p="IBallInput.cs" t="Include" />
               <e p="PlayerInputBehaviour.cs" t="Include" />
               <e p="PlayerPositionService.cs" t="Include" />

@@ -26,28 +26,28 @@ namespace Actors.Balls
             return new IDisposable[]
             {
                 _handler.JumpForce.Subscribe(Jump),
-                _handler.RotationForce.Subscribe()
+                _handler.RotationTorque.Subscribe(Rotate)
             };
         }
 
         private void OnCollisionEnter(Collision other)
         {
-            _handler.SetFloorContact(true);
+            _handler?.SetFloorContact(true);
         }
 
         private void OnCollisionExit(Collision other)
         {
-            _handler.SetFloorContact(false);
+            _handler?.SetFloorContact(false);
         }
 
-        private void Jump(float force)
+        private void Jump(Vector3 force)
         {
-            _rigidbody.AddForce(Vector3.up * force);
+            _rigidbody.AddForce(force);
         }
 
-        private void Rotate(float force)
+        private void Rotate(Vector3 torque)
         {
-            _rigidbody.AddTorque(Vector3.right * force);
+            _rigidbody.AddTorque(torque);
         }
     }
 }
