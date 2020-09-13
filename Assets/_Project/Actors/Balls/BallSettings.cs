@@ -12,6 +12,9 @@ namespace Actors.Balls
         float JumpAnimationDuration { get; }
         Ease JumpAnimationEase { get; }
         float JumpAnimationScaleUp { get; }
+        float EatAnimationDuration { get; }
+        Ease EatAnimationEase { get; }
+        float AteScale { get; }
     }
 
     [CreateAssetMenu]
@@ -27,16 +30,19 @@ namespace Actors.Balls
         [Header("Animation")] [SerializeField] private float _jumpAnimationDuration;
         [SerializeField] private Ease _jumpAnimationEase;
         [SerializeField] private float _jumpAnimationScaleDown;
-
-
+        [SerializeField] private float _eatAnimationDuration;
+        [SerializeField] private Ease _eatAnimationEase;
+        [SerializeField] private float _ateScale;
+        
         public float Speed => _speed;
-
         public float JumpForce => _jumpForce;
         public float HostileChaseDistance => _hostileChaseDistance;
         public float FriendlyAvoidDistance => _friendlyAvoidDistance;
-
         public float JumpAnimationDuration => _jumpAnimationDuration;
         public Ease JumpAnimationEase => _jumpAnimationEase;
         public float JumpAnimationScaleUp => _jumpAnimationScaleDown;
+        public float EatAnimationDuration => _eatAnimationDuration;
+        public Ease EatAnimationEase => _eatAnimationEase;
+        public float AteScale => _ateScale;
     }
 }

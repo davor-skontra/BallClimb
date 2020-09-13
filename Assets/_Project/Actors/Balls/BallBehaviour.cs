@@ -20,7 +20,8 @@ namespace Actors.Balls
 
         private BallHandler _handler;
         private JumpDirectionProvider _jumpDirectionProvider;
-
+        private Tween _scaleAnimation;
+        
         protected override IDisposable[] Init()
         {
             Alkar.InjectMonoBehaviour(this);
@@ -31,8 +32,19 @@ namespace Actors.Balls
             return new IDisposable[]
             {
                 _handler.JumpForce.Subscribe(Jump),
-                _handler.RotationTorque.Subscribe(Rotate)
+                _handler.RotationTorque.Subscribe(Rotate),
+                _handler.ScaleAnimation.Subscribe(ScaleAnimation)
             };
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            var otherBall = other.gameObject.GetComponent<BallBehaviour>();
+
+            if (otherBall != null)
+            {
+                _handler.SetCollideWithOtherBall(otherBall._ballKind);
+            }
         }
 
         private void OnCollisionStay(Collision other)
@@ -53,7 +65,10 @@ namespace Actors.Balls
             _rigidbody.AddForce(jumpDirection);
 
             var s = _ballSettings;
-            transform
+            
+            _scaleAnimation?.Kill();
+            
+            _scaleAnimation = transform
                 .DOScale(Vector3.one * s.JumpAnimationScaleUp, s.JumpAnimationDuration)
                 .SetLoops(2, LoopType.Yoyo)
                 .SetEase(s.JumpAnimationEase)
@@ -61,6 +76,15 @@ namespace Actors.Balls
                 .OnComplete(() => _collider.isTrigger = false)
                 .Play();
 
+        }
+
+        private void ScaleAnimation(float scaleTo)
+        {
+            var scale = Vector3.one * scaleTo;
+            var s = _ballSettings;
+            _scaleAnimation = transform
+                .DOScale(scale, s.EatAnimationDuration)
+                .SetEase(s.EatAnimationEase);
         }
 
         private void Rotate(Vector3 torque)
