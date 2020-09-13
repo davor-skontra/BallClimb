@@ -1,3 +1,16 @@
-﻿{
-	"name": "Project"
+{
+    "name": "Project",
+    "references": [
+        "GUID:f1b629df28b962b4f95818222cae746b",
+        "GUID:fa30fc30f19c7394f864c8d793105fdb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

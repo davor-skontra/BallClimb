@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Utilities
+namespace Unitilities
 {
     public static class KeyValuePairUtility
     {

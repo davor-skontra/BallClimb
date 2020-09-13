@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Utilities
+namespace Unitilities
 {
     public static class VectorUtilities
     {

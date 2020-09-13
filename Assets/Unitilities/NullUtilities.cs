@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 
-namespace Utilities
+namespace Unitilities
 {
     public static class NullUtilities
     {
