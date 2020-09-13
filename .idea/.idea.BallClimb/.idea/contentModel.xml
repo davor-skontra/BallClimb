@@ -13,13 +13,13 @@
         <e p="_Project" t="Include">
           <e p="Actors" t="Include">
             <e p="Balls" t="Include">
+              <e p="AiInput.cs" t="Include" />
               <e p="BallBehaviour.cs" t="Include" />
               <e p="BallHandler.cs" t="Include" />
               <e p="BallInputFactory.cs" t="Include" />
               <e p="BallKind.cs" t="Include" />
               <e p="BallSettings.cs" t="Include" />
               <e p="ControlButton.cs" t="Include" />
-              <e p="HostileInput.cs" t="Include" />
               <e p="IBallInput.cs" t="Include" />
               <e p="PlayerInputBehaviour.cs" t="Include" />
               <e p="PlayerPositionService.cs" t="Include" />

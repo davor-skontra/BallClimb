@@ -23,9 +23,9 @@ namespace Actors.Balls
                 case BallKind.Player:
                     return _player;
                 case BallKind.Hostile:
-                    return new HostileInput(_positionService, _ballSettings);
+                    return new AiInput(BallKind.Hostile, _positionService, _ballSettings);
                 case BallKind.Friendly:
-                    return _friendly;
+                    return new AiInput(BallKind.Friendly, _positionService, _ballSettings);;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(ballKind), ballKind, null);

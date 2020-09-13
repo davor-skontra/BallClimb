@@ -6,17 +6,19 @@ using UnityEngine;
 
 namespace Actors.Balls
 {
-    public class HostileInput : IBallInput
+    public class AiInput : IBallInput
     {
         private Subject<float> RawDirectionSubject = new Subject<float>();
 
         private BallHandler _handler;
 
+        private readonly BallKind _ballKind;
         private PlayerPositionService _playerPositionService;
         private IBallSettings _ballSettings;
 
-        public HostileInput(PlayerPositionService playerPositionService, IBallSettings ballSettings)
+        public AiInput(BallKind ballKind, PlayerPositionService playerPositionService, IBallSettings ballSettings)
         {
+            _ballKind = ballKind;
             _playerPositionService = playerPositionService;
             _ballSettings = ballSettings;
         }
@@ -43,8 +45,10 @@ namespace Actors.Balls
             }
 
             var left = _playerPositionService.PlayerPosition.Value.x < _handler.Position.x;
-
-            return left ? BallSettings.RotationBase: -BallSettings.RotationBase;
+            var hostileDirection = left ? BallSettings.RotationBase : -BallSettings.RotationBase;
+            var direction = _ballKind == BallKind.Hostile ? hostileDirection : -hostileDirection;
+            
+            return direction;
         }
 
         private bool CloseToPlayer()
