@@ -39,6 +39,12 @@
             </e>
             <e p="Scenes.cs" t="Include" />
           </e>
+          <e p="EndGameTracking" t="Include">
+            <e p="EndGameCanvas.cs" t="Include" />
+            <e p="EndGameMessages.cs" t="Include" />
+            <e p="EndGameService.cs" t="Include" />
+            <e p="ResetGame.cs" t="Include" />
+          </e>
           <e p="Project.asmdef" t="Include" />
         </e>
         <e p="AlkarInjector" t="Include">
