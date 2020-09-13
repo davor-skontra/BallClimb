@@ -18,4 +18,4 @@ MonoBehaviour:
   _friendlyAvoidDistance: 5
   _jumpAnimationDuration: 0.05
   _jumpAnimationEase: 3
-  _jumpAnimationScaleDown: 1.5
+  _jumpAnimationScaleDown: 1.2
