@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bf763533e943f7a930aa74b26fea26, type: 3}
   m_Name: DefaultBallSettings
   m_EditorClassIdentifier: 
-  _speed: 200
-  _jumpForce: 18
+  _speed: 2000
+  _jumpForce: 3000

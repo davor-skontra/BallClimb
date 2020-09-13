@@ -9,6 +9,8 @@ namespace Actors.Balls
 {
     public class BallHandler
     {
+        private const float JumpThrottleSeconds = 0.1f;
+            
         [Inject] private BallInputFactory _ballInputFactory;
         [Inject] private IBallSettings _ballSettings;
         [Inject] private PlayerPositionService _playerPositionService;
@@ -40,6 +42,7 @@ namespace Actors.Balls
                 .Jump
                 .Where(_ => _touchingFloor)
                 .Select(_ => _ballSettings.JumpForce)
+                .ThrottleFirst(TimeSpan.FromSeconds(JumpThrottleSeconds))
                 .Select(x => x * Vector3.up);
         }
 

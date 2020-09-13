@@ -31,7 +31,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="019f01b6-f8f0-4ce2-90ef-f001fa334c43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/Media/DefaultBallSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/Media/DefaultBallSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,9 +81,9 @@
         <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/ControlButton.cs" />
         <option value="$PROJECT_DIR$/Assets/AlkarInjector/Alkar.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599990042388</updated>
-      <workItem from="1599990046126" duration="11372000" />
+      <workItem from="1599990046126" duration="12154000" />
     </task>
     <servers />
   </component>
@@ -222,39 +226,39 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs</url>
-          <line>39</line>
+          <line>38</line>
           <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="39">
             <startOffsets>
-              <option value="1010" />
+              <option value="991" />
             </startOffsets>
             <endOffsets>
-              <option value="1043" />
+              <option value="1024" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs</url>
-          <line>34</line>
+          <line>33</line>
           <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="34">
             <startOffsets>
-              <option value="890" />
+              <option value="871" />
             </startOffsets>
             <endOffsets>
-              <option value="922" />
+              <option value="903" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs</url>
-          <line>25</line>
+          <line>24</line>
           <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="25">
             <startOffsets>
-              <option value="638" />
+              <option value="619" />
             </startOffsets>
             <endOffsets>
-              <option value="801" />
+              <option value="782" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
@@ -290,10 +294,10 @@
           <line>49</line>
           <properties documentPath="C:\Users\thekr\Projects\Unity\BallClimb\Assets\_Project\Actors\Balls\BallBehaviour.cs" initialLine="49">
             <startOffsets>
-              <option value="1223" />
+              <option value="1204" />
             </startOffsets>
             <endOffsets>
-              <option value="1252" />
+              <option value="1233" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
