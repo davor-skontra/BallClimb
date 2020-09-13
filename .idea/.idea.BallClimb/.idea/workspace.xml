@@ -31,11 +31,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="019f01b6-f8f0-4ce2-90ef-f001fa334c43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Core/Bootstrap.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallKind.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallKind.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Core/Scenes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Core/Scenes.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Stage.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Core/Bootstrap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Bootstrap.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectComponentAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectComponentAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectServiceAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectServiceAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectAttribute.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlkarInjector/KnownType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlkarInjector/KnownType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +75,21 @@
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Disposal/DisposableUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposable.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
         <option value="$PROJECT_DIR$/Assets/_EditorExtensions/BootstrapLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallKind.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/IBallInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerInputBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/AlkarInjector/Attributes/InjectComponentAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/PlayerPositionService.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallInputFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Actors/Balls/BallBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Core/SceneNames.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Core/Scenes.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +132,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599990042388</updated>
-      <workItem from="1599990046126" duration="1903000" />
+      <workItem from="1599990046126" duration="6449000" />
     </task>
     <servers />
   </component>
@@ -118,5 +154,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1084" y="373" key="RiderGenerateDialog" timestamp="1599993522551">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1084" y="373" key="RiderGenerateDialog/-1920.804.1536.832/2560.804.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1599993522551" />
   </component>
 </project>

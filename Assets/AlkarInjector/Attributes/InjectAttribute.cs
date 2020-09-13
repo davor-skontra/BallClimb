@@ -5,7 +5,7 @@ using UnityEngine;
 namespace AlkarInjector.Attributes
 {
     [MeansImplicitUse]
-    public class InjectServiceAttribute : Attribute
+    public class InjectAttribute : Attribute
     {
         
     }
