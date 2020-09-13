@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="_Project" t="Include">
           <e p="Core" t="Include">
+            <e p="CompositionRoot.cs" t="Include" />
             <e p="Disposal" t="Include">
               <e p="AutoDisposable.cs" t="Include" />
               <e p="AutoDisposableBehaviour.cs" t="Include" />
