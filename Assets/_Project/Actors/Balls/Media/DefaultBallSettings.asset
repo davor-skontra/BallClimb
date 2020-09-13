@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: DefaultBallSettings
   m_EditorClassIdentifier: 
   _speed: 2000
-  _jumpForce: 3000
+  _jumpForce: 4000
+  _hostileChaseDistance: 5
+  _friendlyAvoidDistance: 0

@@ -6,10 +6,9 @@ namespace Actors.Balls
 {
     public class PlayerInputBehaviour : MonoBehaviour, IBallInput
     {
-        private const float RotationBase = 1f;
         private readonly Subject<float> _rawDirectionSubject = new Subject<float>();
-
         private readonly Subject<Unit> _jumpSubject = new Subject<Unit>();
+        private PlayerPositionService _playerPositionService;
 
         private bool _left;
         private bool _right;
@@ -22,6 +21,16 @@ namespace Actors.Balls
             .EveryUpdate()
             .Where(_ => _left && _right)
             .AsUnitObservable();
+
+        public void Initialize(PlayerPositionService positionService)
+        {
+            _playerPositionService = positionService;
+        }
+
+        public void TrackHandler(BallHandler handler)
+        {
+            _playerPositionService.TrackPlayerHandler(handler);
+        }
 
         public void Left(bool down)
         {
@@ -37,23 +46,25 @@ namespace Actors.Balls
         {
             if (_left && !_right)
             {
-                return RotationBase;
+                return BallSettings.RotationBase;
             }
 
             if (!_left && _right)
             {
-                return -RotationBase;
+                return -BallSettings.RotationBase;
             }
 
             return 0f;
         }
-
+        
 #if UNITY_EDITOR
         public void Update()
         {
+
             Left(Input.GetKey(KeyCode.LeftArrow));
             Right(Input.GetKey(KeyCode.RightArrow));
         }
 #endif
+
     }
 }
