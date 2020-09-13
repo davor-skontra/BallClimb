@@ -9,6 +9,7 @@ namespace Core
     {
         [SerializeField] private BallSettings _ballSettings;
         [SerializeField] private PlayerInputBehaviour _playerInput;
+        [SerializeField] private CameraService _cameraService;
 
         private void Awake()
         {
@@ -17,6 +18,7 @@ namespace Core
             
             _playerInput.Initialize(playerPositionService);
 
+            Services.Register<ICameraService>(_cameraService);
             Services.Register(playerPositionService);
             Services.Register(inputFactory);
             Services.Register<IBallSettings>(_ballSettings);
