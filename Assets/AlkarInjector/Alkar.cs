@@ -17,7 +17,7 @@ namespace AlkarInjector
                 _knownTypes[type] = new KnownType(type);
             }
             
-            _knownTypes[type].Resolve(self);
+            _knownTypes[type].ResolveMonoBehaviour(self);
         }
         
         public static void Inject(object self)

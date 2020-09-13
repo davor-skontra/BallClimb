@@ -4,7 +4,7 @@ using UnityEditor.SceneManagement;
 [InitializeOnLoad]
 public static class BootstrapLoader
 {
-   private const string BootstrapScenePath = "Assets/_Project/Core/Bootstrap.unity";
+   private const string BootstrapScenePath = "Assets/_Project/Scenes/Bootstrap.unity";
       
    static BootstrapLoader()
    {
