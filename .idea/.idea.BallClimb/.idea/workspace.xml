@@ -30,14 +30,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="019f01b6-f8f0-4ce2-90ef-f001fa334c43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposableBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposableBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallClimb/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="019f01b6-f8f0-4ce2-90ef-f001fa334c43" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +46,7 @@
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Disposal/DisposableUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Core/Disposal/AutoDisposable.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Core/CompositionRoot.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599990042388</updated>
-      <workItem from="1599990046126" duration="944000" />
+      <workItem from="1599990046126" duration="1302000" />
     </task>
     <servers />
   </component>
